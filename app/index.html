@@ -5,23 +5,327 @@
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <title>ImpressJS Starter</title>
-    <meta name="description" content="Starter Repo for an impress.js preso, with a grunt build" />
+    <title>Frosty - Principal Engineer</title>
+    <meta name="description" content="My petition to become a Principal Engineer at Domo" />
     <meta name="author" content="Aaron Frost" />
 
     <!-- build:css app.css -->
     <link rel="stylesheet" href="css/app.css"/>
     <!-- /build -->
+
+    <link rel="icon"
+          type="image/png"
+          href="http://www.nthsweb.net/castinom/labs/css_project/images/favicon.png">
   </head>
   <body>
+    <audio style="visibility: hidden;" id="song" src="assets/music/holydiver.mp3" preload="auto" controls></audio>
+    <img id="windypic" src="assets/img/windy.gif" alt=""/>
 
     <div id="impress">
-      <div id="bored" class="step slide" data-x="-7000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+
+      <div id="bored" class="step sl" data-x="-6000" data-y="0">
+        <p class="ready1"><span class="mainletter">F</span>rosty is ready...</p>
+        <p class="ready2">to become a Principal</p>
+        <p class="ready3">When you are ready to find out why...</p>
+        <p class="ready4">Volume Up, Click "Begin"</p>
+        <p class="ready5">
+          <a href="#/totes"><button id="begin">Begin</button></a>
+        </p>
       </div>
+
+      <div id="totes" class="step sl" data-x="-5000" data-y="1500" data-z="3000" data-rotate-x="90">
+        <p class="ready1"><span class="mainletter">L</span>egend tells of a brave young warrior</p>
+        <p class="ready2">who would use his mighty beard</p>
+        <p class="ready3">and his ROCK</p>
+        <p class="ready4">to Change To World!!!!</p>
+
+        <p class="ready21"><span class="mainletter">B</span>ut first he must change the title</p>
+        <p class="ready22">of <span class="mainletter">O</span>pen <span class="mainletter">W</span>eb <span class="mainletter">A</span>rchitect</p>
+        <p class="ready23">and cast it back</p>
+        <p class="ready24">from whence it <span class="mainletter">C</span>ame</p>
+      </div>
+
+      <!--<div class="step slide slide1 pic-left" data-x="-3000" data-y="0" data-z="-3000" data-rotate-y="90">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide2 pic-right" data-x="-3000" data-y="0" data-z="-4000" data-rotate-y="90" data-rotate-x="180">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide3 pic-left" data-x="-3000" data-y="800" data-z="-4000" data-rotate-y="180" data-rotate-x="">-->
+        <!-- -->
+      <!--</div>-->
+
+      <!--<div class="step slide slide4 pic-right" data-x="-4000" data-y="800" data-z="-4000" data-rotate-y="180" data-rotate-z="180">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide5 pic-left" data-x="-4000" data-y="300" data-z="-4000" data-rotate-y="180" data-rotate-z="0" data-rotate-x="90">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide6 pic-right" data-x="-4000" data-y="800" data-z="-5000" data-rotate-y="180" data-rotate-z="0" data-rotate-x="0">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide7 pic-right" data-x="-4000" data-y="1400" data-z="-5000" data-rotate-y="180" data-rotate-z="0" data-rotate-x="270">-->
+       <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide8 pic-left" data-x="-2000" data-y="1000" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide9 pic-right" data-x="-9000" data-y="1000" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">-->
+        <!-- -->
+      <!--</div>-->
+      <!--<div class="step slide slide10 pic-left" data-x="-8500" data-y="1000" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">-->
+
+      <!--</div>-->
+      <div class="step slide slide11 pic-right" data-x="-8500" data-y="1000" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/veins.jpg" alt="" class="pic"/>
+        <div class="title">Loyalty</div>
+        <p class="ready1">The Frost Family loves Domo!!!</p>
+        <p class="ready2">When recruiters ask, he replies w/ the Ultimate Shutdown</p>
+        <p class="ready3">Coined the term: Josh James Experience</p>
+        <p class="ready4">Represents Domo everywhere he goes</p>
+      </div>
+      <div class="step slide slide12 pic-left" data-x="-8000" data-y="1000" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/lego.jpg" alt="" class="pic"/>
+        <div class="title">Team Builder</div>
+        <p class="ready1">Frosty has participated in a number of cross-team initiatives that have helped everyone</p>
+        <p class="ready3">The kind of initiative expected from a Principal Engineer</p>
+        <p class="ready4">The following are a list of those</p>
+      </div>
+      <div class="step slide slide13 pic-right" data-x="-8500" data-y="600" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">
+        <img src="assets/img/gangnam-style.jpg" alt="" class="pic"/>
+        <div class="title">ng-styleguide</div>
+        <p class="ready1">Frosty built Domo's Angular Styleguide</p>
+        <p class="ready2">Gathered feedback from all Frontend devs</p>
+        <p class="ready3">Weathered all opinions into a final product</p>
+        <p class="ready4">Helps new teams learn how to write Angular the Domo Way.</p>
+      </div>
+      <div class="step slide slide14 pic-left" data-x="-8500" data-y="1400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">
+        <img src="assets/img/nerdrel.jpg" alt="" class="pic"/>
+        <div class="title">Dev Relations</div>
+        <p class="ready1">Spoke at over 25 events since coming to Domo</p>
+        <p class="ready2">Keynoted at large event, and organized others (ng-conf)</p>
+        <p class="ready3">Spoke in <span class="mainletter">4</span> different countries and <span class="mainletter">2</span> different languages</p>
+        <p class="ready4">Always sporting the Domo logo</p>
+      </div>
+
+      <div class="step slide slide15 pic-right" data-x="-9000" data-y="0" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/expert.jpg" alt="" class="pic"/>
+        <div class="title">GDE</div>
+        <p class="ready1">Google selected Frosty to be a Google Developer Expert</p>
+        <p class="ready2">Only 100 in the world</p>
+        <p class="ready3">Selected by the Angular team</p>
+        <p class="ready4"></p>
+      </div>
+      <div class="step slide slide16 pic-left" data-x="-8500" data-y="0" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/champ.png" alt="" class="pic"/>
+        <div class="title">Champion</div>
+        <p class="ready1">Per Peanav...</p>
+        <p class="ready2">Frosty is #1 participator in the Champion Process</p>
+        <p class="ready3"></p>
+        <p class="ready4">Here are some of the things he's worked on</p>
+      </div>
+      <div class="step slide slide17 pic-right" data-x="-8500" data-y="0" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/flightclub.png" alt="" class="pic"/>
+        <div class="title">Overmind</div>
+        <p class="ready1">Removing overmind was an emotional field of land mines</p>
+        <p class="ready2">Required lots of homework, as well as some social maneuvering</p>
+        <p class="ready3">Measurably improved performance of the app</p>
+        <p class="ready4">Markedly improved stability of the app</p>
+      </div>
+      <div class="step slide slide18 pic-left" data-x="-8000" data-y="0" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/foundation.jpg" alt="" class="pic"/>
+        <div class="title">DomoBits</div>
+        <p class="ready1">Frosty helped push the project, when the leadership waivered</p>
+        <p class="ready2">Challenged the DomoApps team to get on board</p>
+        <p class="ready3">Created unity between the two teams</p>
+        <p class="ready4">Continues to push the effort</p>
+      </div>
+      <div class="step slide slide19 pic-right" data-x="-8500" data-y="-400" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">
+        <img src="assets/img/courage.jpg" alt="" class="pic"/>
+        <div class="title">Encouragement</div>
+        <p class="ready1">Frosty has encouraged others to become Champions</p>
+        <p class="ready2">Walt, Geddes brothers, AppsTeam6</p>
+        <p class="ready3">Wrote a blog about it to help recruit new team members</p>
+        <p class="ready4"></p>
+      </div>
+      <div class="step slide slide20 pic-left" data-x="-8500" data-y="400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">
+        <img src="assets/img/speed.jpg" alt="" class="pic"/>
+        <div class="title">UI Test Speed</div>
+        <p class="ready1">Frosty worked with Tyler and Justin</p>
+        <p class="ready2">Cut the test run time by 50%</p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+
+      <div class="step slide slide21 pic-right" data-x="-7800" data-y="1000" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/pill.jpg" alt="" class="pic"/>
+        <div class="title">Performance</div>
+        <p class="ready1">Per Tim Ehat...</p>
+        <p class="ready2">Frosty is the #1 participator in the performance efforts at Domo</p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+      <div class="step slide slide22 pic-left" data-x="-7300" data-y="1000" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/bridge.jpg" alt="" class="pic"/>
+        <div class="title">san fran</div>
+        <p class="ready1">Against the cosmic odds...</p>
+        <p class="ready2">Frosty has gone above and beyond to help and teach the SF team</p>
+        <p class="ready3">Even when no one expected him to</p>
+        <p class="ready4">When in town, Frosty works from their office</p>
+      </div>
+      <div class="step slide slide23 pic-right" data-x="-7300" data-y="1000" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/lovejob.jpg" alt="" class="pic"/>
+        <div class="title">tenure</div>
+        <p class="ready1">When his team members are down...</p>
+        <p class="ready2">Frosty steps in and helps fix the problems</p>
+        <p class="ready3">Sometimes it means getting management involved to save the day</p>
+        <p class="ready4">He does whatever it takes to keep the team strong</p>
+      </div>
+      <div class="step slide slide24 pic-left" data-x="-6700" data-y="1000" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/impossible.jpg" alt="" class="pic"/>
+        <div class="title">impossible</div>
+        <p class="ready1">When Adam & Josh needed the best...</p>
+        <p class="ready2">They picked Frosty</p>
+        <p class="ready3">16 hour days</p>
+        <p class="ready4">7 days a week</p>
+      </div>
+      <div class="step slide slide25 pic-right" data-x="-7300" data-y="600" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">
+        <img src="assets/img/onboard.jpg" alt="" class="pic"/>
+        <div class="title">onboarding</div>
+        <p class="ready1">Frosty worked w/ Peanav a bit to improve the onboarding process for new engineers</p>
+        <p class="ready2"></p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+      <div class="step slide slide26 pic-left" data-x="-7300" data-y="1400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">
+        <img src="assets/img/mentor.jpg" alt="" class="pic"/>
+        <div class="title">mentor</div>
+        <p class="ready1">Frosty helped mentor Tyler Whited, Bobby Carp, and Ricky Roller</p>
+        <p class="ready2"></p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+
+      <div class="step slide slide27 pic-right" data-x="-7800" data-y="0" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/intervie.jpg" alt="" class="pic"/>
+        <div class="title">interviewing</div>
+        <p class="ready1">Frosty has helped interview potential hires</p>
+        <p class="ready2">Frosty also helped put together many of the current Goonies team</p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+      <div class="step slide slide28 pic-left" data-x="-7300" data-y="0" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/friend.jpg" alt="" class="pic"/>
+        <div class="title">friendship</div>
+        <p class="ready1">Frosty has befriended everyone at Domo</p>
+        <p class="ready2">Including, and specifically, team members who have felt less-than-welcome</p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+      <div class="step slide slide29 pic-right" data-x="-7300" data-y="0" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">
+        <img src="assets/img/late.jpg" alt="" class="pic"/>
+        <div class="title">after hours</div>
+        <p class="ready1">Frosty worked after hours to help keep DomoWebs framework up to snuff</p>
+        <p class="ready2">Including late night support</p>
+        <p class="ready3"></p>
+        <p class="ready4"></p>
+      </div>
+      <!--<div class="step slide slide30" data-x="-6700" data-y="0" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide31" data-x="-7300" data-y="-400" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide32" data-x="-7300" data-y="400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">-->
+        <!--BLAH-->
+      <!--</div>-->
+
+      <!--<div class="step slide slide33" data-x="-6600" data-y="0" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide34" data-x="-6100" data-y="0" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide35" data-x="-6100" data-y="0" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide36" data-x="-5500" data-y="0" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide37" data-x="-6100" data-y="-400" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide38" data-x="-6100" data-y="400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">-->
+        <!--BLAH-->
+      <!--</div>-->
+
+      <!--<div class="step slide slide39" data-x="-6600" data-y="1000" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide40" data-x="-6100" data-y="1000" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide41" data-x="-6100" data-y="1000" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide42" data-x="-5500" data-y="1000" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide43" data-x="-6100" data-y="600" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide44" data-x="-6100" data-y="1400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">-->
+        <!--BLAH-->
+      <!--</div>-->
+
+      <!--<div class="step slide slide45" data-x="-5400" data-y="1000" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide46" data-x="-4900" data-y="1000" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide47" data-x="-4900" data-y="1000" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide48" data-x="-4300" data-y="1000" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide49" data-x="-4900" data-y="600" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide50" data-x="-4900" data-y="1400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">-->
+        <!--BLAH-->
+      <!--</div>-->
+
+      <!--<div class="step slide slide51" data-x="-5400" data-y="0" data-z="-5000" data-rotate-y="90" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide52" data-x="-4900" data-y="0" data-z="-5500" data-rotate-y="0" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide53" data-x="-4900" data-y="0" data-z="-4500" data-rotate-y="180" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide54" data-x="-4300" data-y="0" data-z="-5000" data-rotate-y="270" data-rotate-z="" data-rotate-x="0">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide55" data-x="-4900" data-y="-400" data-z="-5000" data-rotate-y="0" data-rotate-z="" data-rotate-x="270">-->
+        <!--BLAH-->
+      <!--</div>-->
+      <!--<div class="step slide slide56" data-x="-4900" data-y="400" data-z="-5000" data-rotate-y="0" data-rotate-z="180" data-rotate-x="90">-->
+        <!--BLAH-->
+      <!--</div>-->
+
+      <!-- THE END -->
+      <div id="stadium" class="step" data-x="-4900" data-y="-1000" data-z="-10000" data-rotate-y="180" data-rotate-z="-15" data-rotate-x="-15">
+        THANK YOU
+      </div>
+
+
     </div>
 
   <!-- build:js app.js -->
+  <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/impress.js"></script>
   <script src="js/app.js"></script>
   <!-- /build -->

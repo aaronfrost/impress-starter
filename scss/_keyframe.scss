@@ -1,0 +1,79 @@
+@-webkit-keyframes on-1of5{
+  0% {
+    opacity:0;
+  }
+  16% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes on-2of5 {
+  0% {
+    opacity:0;
+  }
+  16% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes on-3of5 {
+  0% {
+    opacity:0;
+  }
+  32% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes on-4of5 {
+  0% {
+    opacity:0;
+  }
+  48% {
+    opacity: 0;
+  }
+  64% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes on-5of5 {
+  0% {
+    opacity:0;
+  }
+  64% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity: .4;
+  }
+  100%{
+    opacity: 1;
+  }
+}

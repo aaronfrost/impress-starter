@@ -1,0 +1,37 @@
+@font-face{
+  font-family: 'KingsThings';
+  src: url('../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.eot');
+  src: url('../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.eot?iefix') format('eot'),
+  url('../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.woff') format('woff'),
+  url('../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.ttf') format('truetype'),
+  url('../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.svg') format('svg');
+}
+@font-face{
+  font-family: 'KingsThingsVersalis';
+  src: url('../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.eot');
+  src: url('../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.eot?iefix') format('eot'),
+  url('../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.woff') format('woff'),
+  url('../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.ttf') format('truetype'),
+  url('../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.svg') format('svg');
+}
+@font-face{
+  font-family: 'KingsThingsScalli';
+  src: url('../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.eot');
+  src: url('../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.eot?iefix') format('eot'),
+  url('../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.woff') format('woff'),
+  url('../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.ttf') format('truetype'),
+  url('../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.svg') format('svg');
+}
+
+
+
+
+@mixin kingfont(){
+  font-family: 'KingsThings', Arial, sans-serif;;
+}
+@mixin kingvfont(){
+  font-family: 'KingsThingsVersalis', Arial, sans-serif;;
+}
+@mixin kingsfont(){
+  font-family: 'KingsThingsScalli', Arial, sans-serif;;
+}

@@ -13,6 +13,10 @@ module.exports = function(grunt) {
       final:{
         files:['app/css/app.css', 'app/index.html', 'app/**/**.js'],
         tasks:["build"]
+      },
+      dev:{
+        files:['scss/**.scss'],
+        tasks:["sass:dist"]
       }
     },
     sass:{
@@ -34,6 +38,20 @@ module.exports = function(grunt) {
       index:{
         src: 'temp/index.html',
         dest: 'dist/index.html'
+      },
+      music:{
+        src: ['app/assets/music/holydiver.mp3'],
+        dest: 'dist/assets/music/holydiver.mp3'
+      },
+      images:{
+        files: [
+          {
+            expand: true,
+            cwd: 'app/assets/img/',
+            src: ['**/*.{png,jpg,svg}'],
+            dest:'dist/assets/img/'
+          }
+        ]
       },
     },
     concat: {
@@ -84,9 +102,15 @@ module.exports = function(grunt) {
     },
     'http-server':{
       dev:{
-        root:'dist',
+        root:'app',
         runInBackground: true,
         port:4000,
+        showDir: true
+      },
+      prod:{
+        root:'dist',
+        runInBackground: true,
+        port:5000,
         showDir: true
       }
     }
@@ -97,8 +121,9 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', []);
 
-  grunt.registerTask('build',['clean:temp', 'concat:dist', 'uglify:dist', 'cssmin:dist', 'processhtml:dist', 'htmlmin:dist', 'copy:js', 'copy:css', 'copy:index', 'clean:temp']);
+  grunt.registerTask('build',['clean:temp', 'concat:dist', 'uglify:dist', 'cssmin:dist', 'processhtml:dist', 'htmlmin:dist', 'copy:js', 'copy:css', 'copy:music', 'copy:index', 'copy:images', 'clean:temp']);
 
-  grunt.registerTask('dev', ['http-server', 'build', 'watch'])
+  grunt.registerTask('prod', ['http-server:prod', 'build', 'watch:js', 'watch:scss', 'watch:final']);
+  grunt.registerTask('dev', ['http-server:dev', 'watch:dev']);
 
 };

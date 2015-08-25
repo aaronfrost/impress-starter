@@ -1,3 +1,293 @@
+@font-face {
+  font-family: 'KingsThings';
+  src: url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.eot");
+  src: url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.eot?iefix") format("eot"), url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.woff") format("woff"), url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.ttf") format("truetype"), url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.svg") format("svg"); }
+@font-face {
+  font-family: 'KingsThingsVersalis';
+  src: url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.eot");
+  src: url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.eot?iefix") format("eot"), url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.woff") format("woff"), url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.ttf") format("truetype"), url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.svg") format("svg"); }
+@font-face {
+  font-family: 'KingsThingsScalli';
+  src: url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.eot");
+  src: url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.eot?iefix") format("eot"), url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.woff") format("woff"), url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.ttf") format("truetype"), url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.svg") format("svg"); }
+@-webkit-keyframes on-1of5 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-2of5 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 0; }
+  32% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-3of5 {
+  0% {
+    opacity: 0; }
+  32% {
+    opacity: 0; }
+  48% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-4of5 {
+  0% {
+    opacity: 0; }
+  48% {
+    opacity: 0; }
+  64% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-5of5 {
+  0% {
+    opacity: 0; }
+  64% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes pulsate {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+@font-face {
+  font-family: 'KingsThings';
+  src: url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.eot");
+  src: url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.eot?iefix") format("eot"), url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.woff") format("woff"), url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.ttf") format("truetype"), url("../assets/font/kt/webfont/kt/Kingthings_Gothique-webfont.svg") format("svg"); }
+@font-face {
+  font-family: 'KingsThingsVersalis';
+  src: url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.eot");
+  src: url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.eot?iefix") format("eot"), url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.woff") format("woff"), url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.ttf") format("truetype"), url("../assets/font/kt/webfont/ktv/Kingthings_Versalis-webfont.svg") format("svg"); }
+@font-face {
+  font-family: 'KingsThingsScalli';
+  src: url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.eot");
+  src: url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.eot?iefix") format("eot"), url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.woff") format("woff"), url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.ttf") format("truetype"), url("../assets/font/kt/webfont/kta/Kingthings_Calligraphica_2-webfont.svg") format("svg"); }
+@-webkit-keyframes on-1of5 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-2of5 {
+  0% {
+    opacity: 0; }
+  16% {
+    opacity: 0; }
+  32% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-3of5 {
+  0% {
+    opacity: 0; }
+  32% {
+    opacity: 0; }
+  48% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-4of5 {
+  0% {
+    opacity: 0; }
+  48% {
+    opacity: 0; }
+  64% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes on-5of5 {
+  0% {
+    opacity: 0; }
+  64% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes pulsate {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+#windypic {
+  opacity: 0;
+  transition: all 1s linear;
+  position: absolute;
+  z-index: -100; }
+
+body.impress-on-totes #windypic {
+  opacity: 1; }
+
+#totes {
+  color: white;
+  font-family: 'KingsThingsScalli', Arial, sans-serif; }
+  #totes p {
+    position: absolute;
+    font-size: 50px;
+    transition: all 1s linear; }
+  #totes p.ready1 {
+    top: 50px;
+    left: 100px; }
+  #totes p.ready2 {
+    top: 250px;
+    left: 100px; }
+  #totes p.ready3 {
+    top: 400px;
+    left: 200px; }
+  #totes p.ready4 {
+    top: 550px;
+    left: 250px;
+    font-size: 70px;
+    display: inline-block; }
+  #totes p.ready5 {
+    bottom: 50px;
+    right: 50px; }
+  #totes:not(.done-ready1) .ready21, #totes:not(.done-ready1) .ready22, #totes:not(.done-ready1) .ready23, #totes:not(.done-ready1) .ready24, #totes:not(.done-ready1) .ready25 {
+    display: none; }
+  #totes.done-ready1 p.ready1, #totes.done-ready1 p.ready2, #totes.done-ready1 p.ready3, #totes.done-ready1 p.ready4, #totes.done-ready1 p.ready5 {
+    opacity: 0;
+    top: -600px; }
+  #totes.done-ready1 p.ready21 {
+    animation: on-1of5 20s 1;
+    top: 50px;
+    left: 100px; }
+  #totes.done-ready1 p.ready22 {
+    animation: on-2of5 20s 1;
+    top: 230px;
+    left: 100px; }
+  #totes.done-ready1 p.ready23 {
+    animation: on-3of5 20s 1;
+    top: 450px;
+    left: 200px; }
+  #totes.done-ready1 p.ready24 {
+    animation: on-4of5 20s 1;
+    top: 540px;
+    left: 250px;
+    font-size: 80px;
+    display: inline-block; }
+  #totes.done-ready1 p.ready25 {
+    animation: on-5of5 20s 1;
+    bottom: 50px;
+    right: 50px; }
+
+body {
+  font-family: 'KingsThingsVersalis', Arial, sans-serif; }
+
+.step:not(.active):not(.present):not(.past) {
+  display: none; }
+
+.mainletter {
+  font-size: 100px !important; }
+
+body:not(.impress-on-stadium) .step.past .pic, body:not(.impress-on-stadium) .step.past .title {
+  opacity: .2; }
+body:not(.impress-on-stadium) .step.past [class*=ready] {
+  opacity: .1; }
+
+#bored {
+  font-family: 'KingsThingsScalli', Arial, sans-serif; }
+  #bored button {
+    cursor: pointer; }
+  #bored p {
+    position: absolute;
+    font-size: 60px; }
+  #bored p.ready1 {
+    animation: on-1of5 15s 1;
+    top: 50px;
+    left: 200px; }
+  #bored p.ready2 {
+    animation: on-2of5 15s 1;
+    top: 230px;
+    left: 300px; }
+  #bored p.ready3 {
+    animation: on-3of5 15s 1;
+    top: 370px;
+    left: 50px; }
+  #bored p.ready4 {
+    animation: on-4of5 15s 1;
+    top: 520px;
+    left: 50px; }
+  #bored p.ready5 {
+    animation: on-5of5 15s 1;
+    bottom: 70px;
+    right: 50px; }
+    #bored p.ready5 #begin {
+      animation: on-5of5 15s 1;
+      font-family: 'KingsThingsVersalis', Arial, sans-serif;
+      font-size: 50px;
+      border-radius: 3px; }
+
+.pic-left .pic, .pic-left .title, .pic-left [class*=ready], .pic-right .pic, .pic-right .title, .pic-right [class*=ready] {
+  transition: opacity 1s linear; }
+
+.pic-left .pic {
+  position: absolute;
+  left: 40px;
+  width: 45%; }
+.pic-left [class*="ready"] {
+  padding-left: 52%;
+  font-size: 25px;
+  padding-bottom: 30px; }
+.pic-left .title {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  font-size: 100px; }
+
+.pic-right .pic {
+  position: absolute;
+  right: 40px;
+  width: 45%; }
+.pic-right [class*="ready"] {
+  padding-right: 52%;
+  font-size: 25px;
+  padding-bottom: 30px; }
+.pic-right .title {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+  font-size: 100px; }
+
+p.ready1 {
+  animation: on-1of5 20s 1; }
+
+p.ready2 {
+  animation: on-2of5 20s 1; }
+
+p.ready3 {
+  animation: on-3of5 20s 1; }
+
+p.ready4 {
+  animation: on-4of5 20s 1; }
+
+p.ready5 {
+  animation: on-5of5 20s 1; }
+
+.sl {
+  display: block;
+  position: relative;
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px; }
+
 /*
     So you like the style of impress.js demo?
     Or maybe you are just curious how it was done?
