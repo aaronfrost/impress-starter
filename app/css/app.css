@@ -134,7 +134,7 @@ body.impress-on-totes #windypic {
 #totes {
   color: white;
   font-family: 'KingsThingsScalli', Arial, sans-serif; }
-  #totes:not(.active) p {
+  #totes.future p {
     display: none; }
   #totes p {
     position: absolute;
@@ -153,8 +153,7 @@ body.impress-on-totes #windypic {
   #totes p.ready4 {
     top: 550px;
     left: 250px;
-    font-size: 70px;
-    display: inline-block; }
+    font-size: 70px; }
   #totes p.ready5 {
     bottom: 50px;
     right: 50px; }
@@ -199,6 +198,9 @@ body:not(.impress-on-stadium) .step.past .pic, body:not(.impress-on-stadium) .st
   opacity: .2; }
 body:not(.impress-on-stadium) .step.past [class*=ready] {
   opacity: .1; }
+
+.step.future p {
+  display: none; }
 
 #bored {
   font-family: 'KingsThingsScalli', Arial, sans-serif; }

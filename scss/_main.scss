@@ -26,6 +26,12 @@ body:not(.impress-on-stadium){
   }
 }
 
+.step.future{
+  p{
+    display:none;
+  }
+}
+
 
 #bored{
   @include kingsfont();

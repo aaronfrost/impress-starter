@@ -16,18 +16,14 @@ body.impress-on-totes{
 }
 
 #totes{
-  &:not(.active){
-    p{
-      display:none;
-    }
-
-  }
 
   color:white;
   @include kingsfont();
 
   &.future{
-
+    p{
+      display:none;
+    }
   }
 
   &.active{
@@ -58,7 +54,7 @@ body.impress-on-totes{
     top:550px;
     left: 250px;
     font-size:70px;
-    display:inline-block;
+
   }
   p.ready5{
     bottom:50px;
