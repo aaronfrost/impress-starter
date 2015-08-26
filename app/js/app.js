@@ -78,7 +78,7 @@ function setupSlides(){
 }
 
 function slider(){
-  var delay = parseInt($(this).attr('delay'), 10) || 12000;
+  var delay = parseInt($(this).attr('delay'), 10) || 14000;
   setTimeout(function(){
     api.next();
   }, delay);

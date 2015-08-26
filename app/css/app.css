@@ -186,8 +186,8 @@ body.impress-on-totes #windypic {
 body {
   font-family: 'KingsThingsVersalis', Arial, sans-serif; }
 
-.step:not(.active):not(.present):not(.past) {
-  display: none; }
+.step:not(.active):not(.present):not(.past) p[class*=ready] {
+  opacity: 0; }
 
 .mainletter {
   font-size: 100px !important; }
