@@ -134,10 +134,13 @@ body.impress-on-totes #windypic {
 #totes {
   color: white;
   font-family: 'KingsThingsScalli', Arial, sans-serif; }
+  #totes:not(.active) p {
+    display: none; }
   #totes p {
     position: absolute;
-    font-size: 50px;
-    transition: all 1s linear; }
+    font-size: 50px; }
+    #totes p.done-ready1 {
+      transition: all 1s linear; }
   #totes p.ready1 {
     top: 50px;
     left: 100px; }

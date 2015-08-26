@@ -16,6 +16,13 @@ body.impress-on-totes{
 }
 
 #totes{
+  &:not(.active){
+    p{
+      display:none;
+    }
+
+  }
+
   color:white;
   @include kingsfont();
 
@@ -29,8 +36,10 @@ body.impress-on-totes{
   p{
     position: absolute;
     font-size:50px;
-    transition: all 1s linear;
 
+    &.done-ready1{
+      transition: all 1s linear;
+    }
   }
 
   p.ready1{
