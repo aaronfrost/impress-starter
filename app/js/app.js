@@ -8,6 +8,12 @@ var body = $('body');
 var windypic = $('#windypic');
 var debug = window.location.href.search(/localhost/) >= 0;
 console.log(debug);
+//song.on('timeupdate', function(){
+//  console.log(song[0].currentTime)
+//});
+
+var sliderTimer;
+var songStarted = false;
 
 setWindyRatio();
 setupTotes();
@@ -44,27 +50,43 @@ function setWindyRatio(){
 function setupTotes(){
   var timer =  undefined;
   var s = song[0];
-  totes.removeClass('done-ready1');
 
   totes.on('impress:stepenter', function(e){
+    removeDoneClasses();
+    clearTimeout(sliderTimer);
+    playSongIfNotPlaying();
+    s.currentTime = 0;
 
-    s.play();
-    //if(debug) s.currentTime = 40;
+
     if(timer == undefined){
       timer = setTimeout(function(){
         totes.addClass('done-ready1');
-      }, 22000);
+        timer = setTimeout(function(){
+          totes.addClass('done-ready2');
+          timer = setTimeout(function(){
+            totes.addClass('done-ready3');
+          }, 20000);
+        }, 20000);
+      }, 20000);
     }
+  }).on('impress:stepleave', function(e){
+    removeDoneClasses();
+    clearInterval(timer);
+    song.off('timeupdate', totesTime1);
   });
+
   song.on('timeupdate', totesTime1);
   function totesTime1(e){
-    if(s.currentTime >= 48.4){
+    if(s.currentTime >= 80.4){
       song.off('timeupdate', totesTime1);
-      console.log('let\'s rock');
       api.next();
     }
   }
-
+  function removeDoneClasses(){
+    totes.removeClass('done-ready1');
+    totes.removeClass('done-ready2');
+    totes.removeClass('done-ready3');
+  }
 }
 
 function setupStadium(){
@@ -78,10 +100,81 @@ function setupSlides(){
 }
 
 function slider(){
+  var s = song[0];
+  var stepName = getCurrentStepName();
+  var musicMapItem = musicStepMap[stepName];
+  console.log(stepName, s.currentTime);
+  playSongIfNotPlaying();
+
+  if(musicMapItem){
+    if(s.currentTime < musicMapItem.time[0] || s.currentTime > musicMapItem.time[1]){
+      s.currentTime = (musicMapItem.time[0] + .44);
+    }
+  }
+
+  clearTimeout(sliderTimer);
   var delay = parseInt($(this).attr('delay'), 10) || 14000;
-  setTimeout(function(){
+  sliderTimer = setTimeout(function(){
     api.next();
   }, delay);
+}
+
+var musicStepMap = {
+  totes:{
+    time : [0, 2]
+  },
+  'step-3':{
+    time:[81, 82]
+  },
+  'step-4':{
+    time:[96, 97]
+  },
+  'step-5':{
+    time:[111, 112]
+  },
+  'step-6':{
+    time:[126, 127]
+  },
+  'step-7':{
+    time:[141, 142]
+  },
+  'step-8':{
+    time:[156, 157]
+  },
+  'step-9':{
+    time:[171, 172]
+  },
+  'step-12':{
+    time:[216, 217]
+  },
+  'step-15':{
+    time:[261, 262]
+  },
+  'step-18':{
+    time:[300, 301]
+  },
+  'step-21':{
+    time:[327, 328]
+  }
+};
+
+function getCurrentStepName(){
+  var name;
+  for (var i=0, l=document.body.classList.length; i<l; ++i) {
+    if(/impress-on-.*/.test(document.body.classList[i])){
+      name = document.body.classList[i];
+      break;
+    }
+  }
+  return name.replace('impress-on-', "");
+}
+
+function playSongIfNotPlaying(){
+  var s = song[0];
+  if(!songStarted){
+    s.play();
+    s.songStarted = true;
+  }
 }
 
 

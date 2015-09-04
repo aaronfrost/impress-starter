@@ -33,35 +33,50 @@ body.impress-on-totes{
     position: absolute;
     font-size:50px;
 
-    &.done-ready1{
+    &.done-ready1, &.done-ready2{
       transition: all 1s linear;
     }
   }
 
   p.ready1{
+    animation: on-1of5 20s 1;
     top:50px;
     left: 100px;
   }
   p.ready2{
+    animation: on-2of5 20s 1;
     top:250px;
     left: 100px;
   }
   p.ready3{
+    animation: on-3of5 20s 1;
     top:400px;
     left: 200px;
   }
   p.ready4{
+    animation: on-4of5 20s 1;
     top:550px;
     left: 250px;
     font-size:70px;
 
   }
   p.ready5{
+    animation: on-5of5 20s 1;
     bottom:50px;
     right: 50px;
   }
   &:not(.done-ready1){
     .ready21, .ready22, .ready23, .ready24, .ready25{
+      display:none;
+    }
+  }
+  &:not(.done-ready1), &:not(.done-ready2){
+    .ready31, .ready32, .ready33, .ready34, .ready35{
+      display:none;
+    }
+  }
+  &:not(.done-ready1), &:not(.done-ready2), &:not(.done-ready3){
+    .ready41, .ready42, .ready43, .ready44, .ready45{
       display:none;
     }
   }
@@ -98,6 +113,76 @@ body.impress-on-totes{
       animation: on-5of5 20s 1;
       bottom:50px;
       right: 50px;
+    }
+
+  }
+  &.done-ready2{
+    p.ready21, p.ready22, p.ready23, p.ready24, p.ready25{
+      opacity:0;
+      top:-600px;
+    }
+    p.ready31{
+      animation: on-1of5 20s 1;
+      top:50px;
+      left: 100px;
+    }
+    p.ready32{
+      font-size: 100px;
+      animation: on-2of5 20s 1;
+      top:50px;
+      left: 500px;
+    }
+    p.ready33{
+      animation: on-3of5 20s 1;
+      top:280px;
+      left: 200px;
+    }
+    p.ready34{
+      animation: on-4of5 20s 1;
+      top:510px;
+      left: 250px;
+      font-size:80px;
+      display:inline-block;
+    }
+    p.ready35{
+      animation: on-5of5 20s 1;
+      top:510px;
+      left: 760px;
+    }
+
+  }
+  &.done-ready3{
+    p.ready31, p.ready32, p.ready33, p.ready34, p.ready35{
+      opacity:0;
+      top:-600px;
+    }
+    p.ready41{
+      animation: on-1of5 20s 1;
+      top:50px;
+      left: 100px;
+    }
+    p.ready42{
+
+      animation: on-2of5 20s 1;
+      top:250px;
+      left: 115px;
+    }
+    p.ready43{
+      animation: on-3of5 20s 1;
+      top:400px;
+      left: 200px;
+    }
+    p.ready44{
+      animation: on-4of5 20s 1;
+      top:550px;
+      left: 250px;
+      //font-size:80px;
+      display:inline-block;
+    }
+    p.ready45{
+      animation: on-5of5 20s 1;
+      top:510px;
+      left: 760px;
     }
 
   }
