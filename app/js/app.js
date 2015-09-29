@@ -50,13 +50,13 @@ function setWindyRatio(){
 function setupTotes(){
   var timer =  undefined;
   var s = song[0];
+  var timerDuration = 20000;
 
   totes.on('impress:stepenter', function(e){
     removeDoneClasses();
     clearTimeout(sliderTimer);
     playSongIfNotPlaying();
     s.currentTime = 0;
-
 
     if(timer == undefined){
       timer = setTimeout(function(){
@@ -65,9 +65,9 @@ function setupTotes(){
           totes.addClass('done-ready2');
           timer = setTimeout(function(){
             totes.addClass('done-ready3');
-          }, 20000);
-        }, 20000);
-      }, 20000);
+          }, timerDuration);
+        }, timerDuration);
+      }, timerDuration);
     }
   }).on('impress:stepleave', function(e){
     removeDoneClasses();
@@ -92,6 +92,9 @@ function setupTotes(){
 function setupStadium(){
   $('#stadium').on('impress:stepenter', function(){
 
+  });
+  $('#gotoTotes').on('click', function(){
+    song[0].play();
   });
 }
 
@@ -176,7 +179,3 @@ function playSongIfNotPlaying(){
     s.songStarted = true;
   }
 }
-
-
-
-//48.4 is when rock starts
